@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="contenedor">
+  <header class="header">
+    <div class="logo">
+
+      <h1><a href="#">HidropCalc1</a></h1>
+    </div>
+
+    <nav>
+      <a href="principal.html">Inicio</a>
+      <a href="usuarios.html">Usuarios</a>
+      <a href="#">Cultivos</a>
+      <a href="#">Consultas</a>
+    </nav>
+  </header>
+  
+  <main class="main">
+    
+      <h3>Por favor, seleccione un tipo de cultivo e ingresa los datos.</h3>
+    <select class="input" name="cultivo">
+
+        <option>Mixto</option>
+
+        <option>Cebollín</option>
+        
+        <option>Cilantro</option>
+        
+        <option>Lechuga</option>
+        
+        </select>
+
+      
+        <form action="" id="frm_registo_cultivo">
+            <div class="inpbox">
+                <div class="column">
+                    <div class="row">
+                       
+                        <input type="text" class="date" id="dateTransplante" placeholder="FechaTrasplan d/m/a">
+                    </div>
+                    <div class="row">
+                        
+                        <input type="text" class="date" id="dateCosecha" placeholder="FechaCosech d/m/a">
+                    </div>
+                </div>
+                <input type="text" class="volTanque" id="volTanque" placeholder="Volumen tanque">
+                <input type="text" class="rate" id="rate" placeholder="Cantidad de plantas">
+                <input type="text" class="bancada" id="bancada" placeholder="Numero de bancada">
+                <button onclick="Calcular()" class="button"> <a href="7b.html" rel="">Calcular</a></button>
+            </div>
+        </form>
+        
+       
+  </main>
+  <footer class="footer links">
+    <section class="links">
+      <a href="#">Inicio</a>
+      <a href="usuarios.html">Usuarios</a>
+      <a href="#">Cultivos</a>
+      <a href="#">Consultas</a>
+    </section>
+  </footer>
+</body>
+</html>
